@@ -1,0 +1,101 @@
+/* Soft-reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Variables */
+
+:root {
+    --bg-color: #1F1F1F;
+    --primary-color: #182658;
+    --secondary-color: #FFFFFF;
+    --primary-color-transparent: #FFFFFF34;
+    --primary-color-txt: #FFFFFF;
+    --placeholder-color-txt: #FFFFFFFF;
+    --blue-money-color: #4077D0;
+    --green-money-color: #40F7D0
+    --red-money-color: #ff1e46;
+    --transparent: #00000000;
+    --semi-transparent: #ffffff34;
+    --transition: .5s;
+
+}
+
+/* Inheritance */
+
+html {
+    font-size: 62.5%;    /* Alterar valor de calculo do 'rem' de 16px para 10px */
+}
+
+body {
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+
+
+    font-size: 1.6rem;    /* Retornando valor padrão de fonte-size do body com unidade rem */
+    color: var(--primary-color-txt);
+    /* background-color: var(--bg-color); */
+    min-height: 100vh !important;
+}
+
+header {
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+    background-color: #4077D0;
+
+    width: max-content;
+}
+
+main {    
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+    background-color: #c240d0;
+}
+
+footer {    
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+    background-color: #c240d0;
+}
+
+section {    
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+}
+
+.left-side-menu {    
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+
+
+    width: 2.5rem;
+    height: max-content;
+}
+
+.right-side-menu {    
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+
+
+    width: 2.5rem;
+    height: max-content;
+}
+
+.icon-size {
+    border: 0.17rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+
+    width: 2.43rem;
+    height: 2.43rem;
+
+}
+
+.logomarca-small {
+    width: 12rem;
+}
