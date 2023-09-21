@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -17,7 +17,8 @@
     --secondary-color: #FFFFFF;
     --primary-color-transparent: #FFFFFF34;
     --primary-color-txt: #FFFFFF;
-    --placeholder-color-txt: #FFFFFFFF;
+    --placeholder-color-txt: #01114A30;
+    --msgs-primary: #0E71D6;
     --blue-money-color: #4077D0;
     --green-money-color: #40F7D0
     --red-money-color: #ff1e46;
@@ -45,57 +46,145 @@ body {
 }
 
 header {
-    border: 0.17rem solid var(--primary-color) !important;
+    border: 0.2rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
-    background-color: #4077D0;
+    background-color: #4077D050;
 
     width: max-content;
 }
 
 main {    
-    border: 0.17rem solid var(--primary-color) !important;
+    border: 0.3rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
-    background-color: #c240d0;
+    background-color: #50a2b5;
+    height: max-content;
 }
 
-footer {    
-    border: 0.17rem solid var(--primary-color) !important;
+footer {
+    border: 0.2rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
     background-color: #c240d0;
 }
 
 section {    
-    border: 0.17rem solid var(--primary-color) !important;
+    border: 0.2rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
 }
 
+button {
+    border: 0.2rem solid var(--transparent) !important;
+}
+
 .left-side-menu {    
-    border: 0.17rem solid var(--primary-color) !important;
+    border: 0.2rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
 
 
-    width: 2.5rem;
+    width: 4.43rem;
+    height: max-content;
+}
+
+.middle-header-container {
+    width: 100%;
     height: max-content;
 }
 
 .right-side-menu {    
-    border: 0.17rem solid var(--primary-color) !important;
+    border: 0.2rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
 
 
-    width: 2.5rem;
+    width: 4.43rem;
     height: max-content;
 }
 
+.logomarca-small {
+    width: 24rem;
+}
+
 .icon-size {
-    border: 0.17rem solid var(--primary-color) !important;
+    border: 0.24rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
 
-    width: 2.43rem;
-    height: 2.43rem;
+    width: 4.86rem;
+    height: 4.86rem;
 
 }
 
-.logomarca-small {
-    width: 12rem;
+.fi {
+    color: var(--primary-color);
+    font-size: 2.6rem;
+}
+
+.search-merch-container {
+    width: 100%;
+}
+
+.search-bar {
+    width: 86%;
+    height: 2.5rem;
+}
+
+.search-bar-input {   
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    color: var(--placeholder-color-txt); 
+    border: 0.2rem solid var(--primary-color) !important;
+    border-radius: 0.7rem;
+    width: 90%;
+    height: 4.43rem;
+}
+
+.search-bar-line{
+    left: 48%;
+    top: -5rem;
+    position: relative;
+    height: 3.2rem;
+    width: .12rem;
+}
+
+.search-bar-btn {
+    left: 48%;
+    top: -4.2rem;
+    position: relative;
+    background-color: var(--transparent);
+    height: 4.86rem;
+    width: 4.86rem;
+}
+
+.first-access-msg {
+    position: relative;
+    margin: auto;
+    text-align: justify;
+    font-size: 2.5rem;    
+    border: 0.45rem solid var(--primary-color) !important;
+    border-radius: 0.7rem;
+    height: max-content;
+    width: 95%;
+    background-color: var(--msgs-primary);
+}
+.pointer-container {
+    position: relative;
+    left: 94.8%;
+    top: -16.6rem;
+    border-top: 0.4rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
+    width: 9rem;
+    height: 4.4rem;
+}
+.fi-ss-caret-down {
+    position: relative;
+    top: -7rem;
+    left: -3rem;
+
+    font-size: 15rem;
+    color: var(--msgs-primary);
+}
+
+.merch-box { 
+    border: 0.12rem solid var(--primary-color) !important;
+    border-radius: 0.5rem;
+    height: 44rem;
+    width: 80%;
+    background-color: var(--primary-color);
 }

@@ -12,12 +12,16 @@
 
     <!-- Call CDN Server FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="    
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Call CDN Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        
+    <!-- Call CDN FlatIcons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     
     <!-- Call Google fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,19 +67,58 @@
             </div>
         </nav>
 
-        <!-- logo container -->
+        <!-- middle-header-container -->
 
-        <section class="container-fluid d-flex flex-row justify-content-between align-items- p-0 header-logo">
-            <div class="hands-icon icon-size">
-                <!-- offset.dumb.invisible.icon -->
-            </div>
-            <div class="small-logo">
-                <img class="logomarca-small" src="./images/LogomarcaAlugafacil.png" alt="Logo marca Aluga fácil">
-            </div>
-            <div class="hands-icon icon-size">
+        <section class="container-fluid d-flex flex-column align-items-start p-0 middle-header-container">
 
-            </div>
+            <!-- logo container -->
+            
+            <section class="container-fluid d-flex flex-row justify-content-between align-items-start p-0 header-logo">
+                <div class="hands-icon icon-size">
+                    <!-- offset.dumb.invisible.icon -->
+                </div>
+                <div class="small-logo">
+                    <img class="logomarca-small" src="./images/LogomarcaAlugafacil.png" alt="Logo marca Aluga fácil">
+                </div>
+                <div class="hands-icon icon-size">
+                    
+                </div>
+            </section>
+            
+            <!-- Search bar and merch -->
+            <section class="container-fluid d-flex flex-column justify-content-evenly align-items-center px-1 my-1 search-merch-container ">
+        
+                <!-- FIRST ACCESS MESSAGE -->
+                <div class="container-fluid group-msg-fa">
+                    <div class="my-4 mb-4 p-4 first-access-msg">
+                        Olá, você efetuou o cadastro rápido, dessa forma você tem acesso à plataforma em segundos. Lembre-se, no entanto, que algumas ações no aplicativo necessitam de algumas informações adicionais, quando você quiser verificar seu e-mail e completar essas informações, utilize este ícone. Algumas informações não são obrigatórias, porém podem contribuir para uma melhor usabilidade.
+                    </div>
+                    <div class="pointer-container">
+                        <i class="fi fi-ss-caret-down"></i>
+                    </div>
+                </div>
+        
+                <!-- SEARCH-BAR -->
+                <div class="mb-5 search-bar">
+                    <input 
+                        type="text"
+                        class="text-center search-bar-input"
+                        placeholder="B u s c a r"    
+                    >
+                    <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                    <button class="search-bar-btn">
+                        <i class="fi fi-rr-search search-icon"></i>
+                    </button>
+                </div>
+        
+                <!-- MERCH-BOX -->
+                <div class="my-5 merch-box">
+                    <!-- img -->
+                </div>
+        
+            </section>
         </section>
+
 
         <!-- right-side-menu  -->
 
@@ -101,31 +144,8 @@
 
     <!-- MAIN -->
 
-    <main class="main main-container my-1 text-center">
-        main
-
-        <!-- Search bar and merch -->
-        <section class="container primary-container my-3">
-
-            <!-- FIRST ACCESS MESSAGE -->
-            <div class="first-access-msg">
-                <!-- img -->
-            </div>
-
-            <!-- SEARCH-BAR -->
-            <div class="search-bar">
-                <input type="text" class="search-bar-input">
-                <button class="search-bar-btn">
-                    <!-- img -->
-                </button>
-            </div>
-
-            <!-- MERCH-BOX -->
-            <div class="merch-box">
-                <!-- img -->
-            </div>
-
-        </section>
+    <main class="container-fluid d-flex flex-column align-items-center p-0 mb-1 main-container text-center">
+        
 
         <section class="container secondary-container my-1">
 
