@@ -20,7 +20,7 @@
     --placeholder-color-txt: #01114A30;
     --msgs-primary: #0E71D6;
     --blue-money-color: #4077D0;
-    --green-money-color: #40F7D0
+    --green-money-color: #40F7D0;
     --red-money-color: #ff1e46;
     --transparent: #00000000;
     --semi-transparent: #ffffff34;
@@ -32,6 +32,7 @@
 
 html {
     font-size: 62.5%;    /* Alterar valor de calculo do 'rem' de 16px para 10px */
+    width: 100vw !important;
 }
 
 body {
@@ -98,22 +99,34 @@ button {
     height: max-content;
 }
 
+
+
 .logomarca-small {
-    width: 24rem;
+    width: 10rem;
+
+/*  bigscreen   
+    width: 24rem; */
 }
 
 .icon-size {
     border: 0.24rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
 
+    
+    width: 2.8rem;
+    height: 2.8rem;
+    
+    /* big screen
     width: 4.86rem;
-    height: 4.86rem;
-
+    height: 4.86rem; */
 }
 
 .fi {
     color: var(--primary-color);
-    font-size: 4.6rem;
+    font-size: 2.2rem;
+
+/*     big screen
+    font-size: 4.6rem; */
 }
 
 .search-merch-container {
@@ -122,17 +135,30 @@ button {
 
 .search-bar {
     width: 86%;
-    height: 2.5rem;
+    height: 1rem;
 }
+/*bigscreen 
+.search-bar {
+    width: 86%;
+    height: 2.5rem;
+} */
 
 .search-bar-input {   
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+
+    /*bigscreen 
+    font-size: 1.6rem; */
+    
     color: var(--primary-color);
     color: var(--placeholder-color-txt); 
     border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.7rem;
+    border-radius: 0.2rem;
     width: 90%;
-    height: 4.43rem;
+    
+    height: 4rem;
+    /*bigscreen 
+    border-radius: 0.7rem;
+    height: 4.43rem; */
 }
 
 .search-bar-line{
@@ -154,37 +180,49 @@ button {
 
 .first-access-msg {
     position: relative;
-    margin: auto;
     text-align: justify;
-    font-size: 2.5rem;    
+
+    font-size: .8rem;    
+    
+    
+    /*big screen 
     border: 0.45rem solid var(--primary-color) !important;
     border-radius: 0.7rem;
+    font-size: 2.5rem;     */
+
+    border: 0.2rem solid var(--primary-color) !important;
+    border-radius: 0.3rem;
     height: max-content;
     width: 95%;
     background-color: var(--msgs-primary);
 }
 .pointer-container {
     position: relative;
-    left: 94.8%;
-    top: -16.6rem;
-    border-top: 0.4rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-    width: 9rem;
-    height: 4.4rem;
+    left: 47%;
+    top: -11.3rem;
+    border-top: 0.2rem solid var(--primary-color) !important;
+    width: 2rem;
+    height: 1.4rem;
 }
 .fi-ss-caret-down {
     position: relative;
-    top: -7rem;
-    left: -3rem;
+    top: -1.9rem;
+    left: -1.1rem;
 
-    font-size: 15rem;
+    font-size: 4rem;
     color: var(--msgs-primary);
 }
 
 .merch-box { 
     border: 0.12rem solid var(--primary-color) !important;
+
+    border-radius: 0.5rem;
+    height: 7rem;
+    /* bigscreen
     border-radius: 0.5rem;
     height: 44rem;
-    width: 80%;
+    width: 86%;
+     */
+    width: 26.7rem;
     background-color: var(--primary-color);
 }
