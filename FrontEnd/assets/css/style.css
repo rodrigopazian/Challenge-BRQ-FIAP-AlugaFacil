@@ -49,15 +49,10 @@ header {
 }
 
 main {    
-    border: 0.3rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
     height: max-content;
 }
 
 footer {
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-    background-color: #c240d0;
 }
 
 section {
@@ -160,12 +155,6 @@ button {
     width: 26.5rem;
     height: 3.2rem;
 }
-.item-list {
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.2rem;
-    width: 30.5rem;
-    height: 7.5rem;
-}
 /*bigscreen 
 .search-bar {
     width: 86%;
@@ -175,7 +164,7 @@ button {
 .search-bar-input { 
     margin-left: 0.5rem;  
     font-size: 1.2rem;
-
+    
     /*bigscreen 
     font-size: 1.6rem; */
     border: 0.1rem solid var(--invis);
@@ -217,14 +206,79 @@ button {
 
 .merch-box { 
     border: 0.1rem solid var(--primary-color) !important;
-
     border-radius: 0.2rem;
     height: 7.2rem;
     /* bigscreen
     border-radius: 0.5rem;
     height: 44rem;
     width: 86%;
-     */
+    */
     width: 26.9rem;
     background-color: var(--primary-color);
+}
+
+.merch-line-left {
+    margin-left: 22%;
+    color: var(--secondary-color) !important;
+    height: 80%; 
+    width: 0.3rem;
+}
+.merch-line-right {
+    margin-right: 22%;
+    color: var(--secondary-color) !important;
+    height: 80%; 
+    width: 0.3rem;
+}
+
+.merch-arrow-left {
+    background-color: var(--invis);
+    
+}
+
+.merch-arrow-right {
+    background-color: var(--invis);
+    
+}
+
+.arrow-right {
+    font-size: 1.4rem;
+    color: var(--secondary-color)
+}
+
+.arrow-left {
+    font-size: 1.4rem;
+    color: var(--secondary-color)
+}
+
+.merch-text {
+    font-size: 0.9rem;
+    flex: 1;
+}
+
+.item-list {
+    border: 0.1rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    width: 30.7rem;
+    height: 7.7rem;
+}
+
+.img-item {
+    width: 5rem;
+}
+
+.item-bar-line {
+    margin-left: .7rem;
+    margin-right: .7rem;
+    height: 6rem;
+    width: 0.2rem;
+}
+
+.desc-item-short {
+    color: var(--primary-color);
+    font-size: .8rem;
+}
+
+.desc-values-contnr {
+    font-size: .8rem;
+    color: var(--primary-color);
 }
