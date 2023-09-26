@@ -7,14 +7,15 @@
     font-family: 'Ubuntu', sans-serif;
     list-style: none;
     text-decoration: none;
+    outline-color: #00000000;
 }
 
 /* Variables */
 
 :root {
-    --bg-color: #1F1F1F;
+    --bg-color: #F7F7F7;
     --primary-color: #182658;
-    --secondary-color: #FFFFFF;
+    --secondary-color: #F7F7F7;
     --primary-color-transparent: #FFFFFF34;
     --primary-color-txt: #FFFFFF;
     --placeholder-color-txt: #01114A30;
@@ -22,8 +23,8 @@
     --blue-money-color: #4077D0;
     --green-money-color: #40F7D0;
     --red-money-color: #ff1e46;
-    --transparent: #00000000;
-    --semi-transparent: #ffffff34;
+    --invis: #00000000;
+    --semi-trasnsparent: #ffffff34;
     --transition: .5s;
 
 }
@@ -36,28 +37,20 @@ html {
 }
 
 body {
-    border: 0.17rem solid var(--primary-color) !important;
-    border-radius: 0.2rem;
-
-
     font-size: 1.6rem;    /* Retornando valor padrão de fonte-size do body com unidade rem */
     color: var(--primary-color-txt);
-    /* background-color: var(--bg-color); */
+    background-color: var(--bg-color);
     min-height: 100vh !important;
 }
 
 header {
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-    background-color: #4077D050;
-
+    margin-top: 2.55rem;
     width: max-content;
 }
 
 main {    
     border: 0.3rem solid var(--primary-color) !important;
     border-radius: 0.3rem;
-    background-color: #50a2b5;
     height: max-content;
 }
 
@@ -67,20 +60,15 @@ footer {
     background-color: #c240d0;
 }
 
-section {    
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
+section {
+
 }
 
 button {
-    border: 0.2rem solid var(--transparent) !important;
+    border: 0.1rem solid var(--invis) !important;
 }
 
-.left-side-menu {    
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-
-
+.left-side-menu {
     width: 4.43rem;
     height: max-content;
 }
@@ -91,28 +79,25 @@ button {
 }
 
 .right-side-menu {    
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-
-
     width: 4.43rem;
     height: max-content;
 }
 
+.img-icon-size {
+    width: 2.2rem;
+    height: 2.2rem;
+}
 
 
 .logomarca-small {
     width: 10rem;
-
+    height: 1.9rem;
+    
 /*  bigscreen   
     width: 24rem; */
 }
 
-.icon-size {
-    border: 0.24rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-
-    
+.icon-size {    
     width: 2.8rem;
     height: 2.8rem;
     
@@ -133,9 +118,53 @@ button {
     width: 100%;
 }
 
+
+.first-access-msg {
+    position: relative;
+    text-align: justify;
+    
+    font-size: .7rem;    
+    
+    
+    /*big screen 
+    border: 0.45rem solid var(--primary-color) !important;
+    border-radius: 0.7rem;
+    font-size: 2.5rem;     */
+    
+    border: 0.1rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    height: max-content;
+    width: 100%;
+    background-color: var(--msgs-primary);
+}
+.pointer {
+    z-index: ;
+    position: absolute;
+    left: 100%;
+    top: -1%;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.fi-ss-caret-down {
+    position: relative;
+    top: -1.9rem;
+    left: -1.1rem;
+    
+    font-size: 4rem;
+    color: var(--msgs-primary);
+}
+
 .search-bar {
-    width: 86%;
-    height: 1rem;
+    border: 0.1rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    width: 26.5rem;
+    height: 3.2rem;
+}
+.item-list {
+    border: 0.2rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    width: 30.5rem;
+    height: 7.5rem;
 }
 /*bigscreen 
 .search-bar {
@@ -143,86 +172,59 @@ button {
     height: 2.5rem;
 } */
 
-.search-bar-input {   
-    font-size: 1.4rem;
+.search-bar-input { 
+    margin-left: 0.5rem;  
+    font-size: 1.2rem;
 
     /*bigscreen 
     font-size: 1.6rem; */
+    border: 0.1rem solid var(--invis);
     
     color: var(--primary-color);
-    color: var(--placeholder-color-txt); 
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.2rem;
-    width: 90%;
-    
-    height: 4rem;
+    color: var(--placeholder-color-txt);
+    flex: 1;    
+    height: -content;
+
     /*bigscreen 
     border-radius: 0.7rem;
     height: 4.43rem; */
 }
 
 .search-bar-line{
-    left: 48%;
-    top: -5rem;
-    position: relative;
-    height: 3.2rem;
-    width: .12rem;
+    margin-inline: .5rem;
+    padding: 0 !important;
+    height: 1.95rem;
+    width: .1rem;
 }
 
 .search-bar-btn {
-    left: 48%;
-    top: -4.2rem;
-    position: relative;
-    background-color: var(--transparent);
-    height: 4.86rem;
-    width: 4.86rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--invis);
+    height: 1.8rem;
+    width: 1.8rem;
+    border: 0.1rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
 }
 
-.first-access-msg {
-    position: relative;
-    text-align: justify;
-
-    font-size: .8rem;    
-    
-    
-    /*big screen 
-    border: 0.45rem solid var(--primary-color) !important;
-    border-radius: 0.7rem;
-    font-size: 2.5rem;     */
-
-    border: 0.2rem solid var(--primary-color) !important;
-    border-radius: 0.3rem;
-    height: max-content;
-    width: 95%;
-    background-color: var(--msgs-primary);
+.search-icon {
+    font-size: 1.2rem;
 }
-.pointer-container {
-    position: relative;
-    left: 47%;
-    top: -11.3rem;
-    border-top: 0.2rem solid var(--primary-color) !important;
-    width: 2rem;
-    height: 1.4rem;
-}
-.fi-ss-caret-down {
-    position: relative;
-    top: -1.9rem;
-    left: -1.1rem;
 
-    font-size: 4rem;
-    color: var(--msgs-primary);
-}
+
 
 .merch-box { 
-    border: 0.12rem solid var(--primary-color) !important;
+    border: 0.1rem solid var(--primary-color) !important;
 
-    border-radius: 0.5rem;
-    height: 7rem;
+    border-radius: 0.2rem;
+    height: 7.2rem;
     /* bigscreen
     border-radius: 0.5rem;
     height: 44rem;
     width: 86%;
      */
-    width: 26.7rem;
+    width: 26.9rem;
     background-color: var(--primary-color);
 }

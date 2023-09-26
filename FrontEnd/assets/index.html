@@ -52,21 +52,22 @@
 
     <!-- HEADER -->
 
-    <header class="container-fluid d-flex flex-row justify-content-between align-items-start p-1 my-1 text-center container-header">
+    <header class="container-fluid d-flex flex-row justify-content-between align-items-start p-1 text-center container-header">
         
 
         <!-- HEADER MENU -->
 
         <!-- left-side-menu -->
 
-        <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 pt-1 left-side-menu">
+        <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 left-side-menu">
             
-            <div class="d-flex flex-column align-items-center mb-1 hmb-menu icon-size">
+            <button class="d-flex flex-column align-items-center mb-1 hmb-menu icon-size">
                 <i class="fi fi-br-menu-burger"></i>
-            </div>
-            <div class="d-flex flex-column align-items-center mb-1 switch-loc-type icon-size">
-                <i class="fi fi-ss-people-arrows-left-right"></i>
-            </div>
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 switch-loc-type icon-size">
+                <!-- <i class="fi fi-ss-people-arrows-left-right"></i> -->
+                <img class="img-icon-size" src="./images/IconChangeLoc1.png" alt="Ícone troca de locatário para locador">
+            </button>
         </nav>
 
         <!-- middle-header-container -->
@@ -79,12 +80,12 @@
                 <div class="hands-icon icon-size">
                     <!-- offset.dumb.invisible.icon -->
                 </div>
-                <div class="small-logo">
+                <button class="small-logo">
                     <img class="logomarca-small" src="./images/LogomarcaAlugafacil.png" alt="Logo marca Aluga fácil">
-                </div>
-                <div class="d-flex flex-column align-items-center hands-icon icon-size">
+                </button>
+                <button class="d-flex flex-column align-items-center hands-icon icon-size">
                     <i class="fi fi-rr-handshake"></i>
-                </div>
+                </button>
             </section>
             
             <!-- Search bar and merch -->
@@ -92,20 +93,18 @@
         
                 <!-- FIRST ACCESS MESSAGE -->
                 <div class="container-fluid d-flex flex-column align-items-center group-msg-fa">
-                    <div class="my-4 mb-4 p-2 first-access-msg">
+                    <div class="mt-4 mb-3 p-2 first-access-msg">
                         Olá, você efetuou o cadastro rápido, dessa forma você tem acesso à plataforma em segundos. Lembre-se, no entanto, que algumas ações no aplicativo necessitam de algumas informações adicionais, quando você quiser verificar seu e-mail e completar essas informações, utilize este ícone. Algumas informações não são obrigatórias, porém podem contribuir para uma melhor usabilidade.
-                    </div>
-                    <div class="pointer-container">
-                        <i class="fi fi-ss-caret-down"></i>
+                        <img class="pointer" src="./images/MsgPAcessoPointer.png" alt="Pointer"></img>
                     </div>
                 </div>
         
                 <!-- SEARCH-BAR -->
-                <div class="mb-5 search-bar">
+                <div class="container d-flex flex-row align-items-center mb-2 p-0 search-bar">
                     <input 
                         type="text"
                         class="text-center search-bar-input"
-                        placeholder="B u s c a r"    
+                        placeholder="Buscar"    
                     >
                     <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
                     <button class="search-bar-btn">
@@ -114,7 +113,7 @@
                 </div>
         
                 <!-- MERCH-BOX -->
-                <div class="my-5 merch-box">
+                <div class="my-1 merch-box">
                     <!-- img -->
                 </div>
         
@@ -124,33 +123,96 @@
 
         <!-- right-side-menu  -->
 
-        <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 pt-1 right-side-menu">
-            <div class="d-flex flex-column align-items-center mb-1 clock-icon icon-size">
+        <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 right-side-menu">
+            <button class="d-flex flex-column align-items-center mb-1 clock-icon icon-size">
                 <i class="fi fi-rr-alarm-clock"></i>
-            </div>
-            <div class="d-flex flex-column align-items-center mb-1 account-inf-icon icon-size">
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 account-inf-icon icon-size">
                 <i class="fi fi-rs-id-badge"></i>
-            </div>
-            <div class="d-flex flex-column align-items-center mb-1 hearth-icon icon-size">
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 hearth-icon icon-size">
                 <i class="fi fi-rr-heart"></i>
-            </div>
-            <div class="d-flex flex-column align-items-center mb-1 localiz-icon icon-size">
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 localiz-icon icon-size">
                 <i class="fi fi-rr-marker"></i>
-            </div>
-            <div class="d-flex flex-column align-items-center mb-1 filter-icon icon-size">
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 filter-icon icon-size">
                 <i class="fi fi-rr-filter"></i>
-            </div>
+            </button>
         </nav>
 
     </header>
 
     <!-- MAIN -->
 
-    <main class="container-fluid d-flex flex-column align-items-center p-0 mb-1 main-container text-center">
-        
+    <main class="container-fluid d-flex flex-column align-items-center p-0 mb-1 main-container text-center">       
 
-        <section class="container secondary-container my-1">
+        <!-- main MENU -->
 
+        <!-- middle-main-container -->
+
+        <section class="container-fluid d-flex flex-column align-items-start m-2 p-2 main-container">
+
+            <!-- ITEM-LIST -->
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
+                <input 
+                    type="text"
+                    class="text-center search-bar-input"
+                    placeholder="B u s c a r"    
+                >
+                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <button class="search-bar-btn">
+                    <i class="fi fi-rr-search search-icon"></i>
+                </button>
+            </div>
+            <!-- ITEM-LIST -->
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
+                <input 
+                    type="text"
+                    class="text-center search-bar-input"
+                    placeholder="B u s c a r"    
+                >
+                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <button class="search-bar-btn">
+                    <i class="fi fi-rr-search search-icon"></i>
+                </button>
+            </div>
+            <!-- ITEM-LIST -->
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
+                <input 
+                    type="text"
+                    class="text-center search-bar-input"
+                    placeholder="B u s c a r"    
+                >
+                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <button class="search-bar-btn">
+                    <i class="fi fi-rr-search search-icon"></i>
+                </button>
+            </div>
+            <!-- ITEM-LIST -->
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
+                <input 
+                    type="text"
+                    class="text-center search-bar-input"
+                    placeholder="B u s c a r"    
+                >
+                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <button class="search-bar-btn">
+                    <i class="fi fi-rr-search search-icon"></i>
+                </button>
+            </div>
+            <!-- ITEM-LIST -->
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
+                <input 
+                    type="text"
+                    class="text-center search-bar-input"
+                    placeholder="B u s c a r"    
+                >
+                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <button class="search-bar-btn">
+                    <i class="fi fi-rr-search search-icon"></i>
+                </button>
+            </div>
         
         </section>
 
