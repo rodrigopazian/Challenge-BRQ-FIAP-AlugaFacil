@@ -360,6 +360,8 @@ button {
 }
 
 .primary-shadow {
-    box-shadow: -0.07rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-primary)
+    box-shadow: -0.07rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-primary);
 }
-
+.inner-shadow {
+    box-shadow: 0rem 0rem 2rem 0rem inset var(--drop-shadow-color-primary); 
+}
