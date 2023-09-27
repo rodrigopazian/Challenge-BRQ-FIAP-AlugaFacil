@@ -24,6 +24,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
 
     <!-- Call Google fonts API -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,14 +94,14 @@
         
                 <!-- FIRST ACCESS MESSAGE -->
                 <div class="container-fluid d-flex flex-column align-items-center group-msg-fa">
-                    <div class="mt-4 mb-3 p-2 first-access-msg">
+                    <div class="mt-4 mb-3 p-2 primary-shadow first-access-msg">
                         Olá, você efetuou o cadastro rápido, dessa forma você tem acesso à plataforma em segundos. Lembre-se, no entanto, que algumas ações no aplicativo necessitam de algumas informações adicionais, quando você quiser verificar seu e-mail e completar essas informações, utilize este ícone. Algumas informações não são obrigatórias, porém podem contribuir para uma melhor usabilidade.
                         <img class="pointer" src="./images/MsgPAcessoPointer.png" alt="Pointer"></img>
                     </div>
                 </div>
         
                 <!-- SEARCH-BAR -->
-                <div class="container d-flex flex-row align-items-center mb-2 p-0 search-bar">
+                <div class="container d-flex flex-row align-items-center mb-2 p-0 primary-shadow search-bar">
                     <input 
                         type="text"
                         class="text-center search-bar-input"
@@ -113,7 +114,7 @@
                 </div>
         
                 <!-- MERCH-BOX -->
-                <div class="container d-flex flex-row justify-content-between align-items-center my-1 merch-box">
+                <div class="container d-flex flex-row justify-content-between align-items-center my-1 primary-shadow merch-box">
                     <button class="merch-arrow-left">
                         <i class="fi fi-br-angle-left arrow-left"></i>
                     </button>
@@ -131,14 +132,14 @@
         </section>
 
 
-        <!-- right-side-menu  -->
+        <!-- RIGHT-SIDE-MENU  -->
 
         <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 right-side-menu">
             <button class="d-flex flex-column align-items-center mb-1 clock-icon icon-size">
                 <i class="fi fi-rr-alarm-clock"></i>
             </button>
             <button class="d-flex flex-column align-items-center mb-1 account-inf-icon icon-size">
-                <i class="fi fi-rs-id-badge"></i>
+                <i class="fi fi-rs-id-badge "></i>
             </button>
             <button class="d-flex flex-column align-items-center mb-1 hearth-icon icon-size">
                 <i class="fi fi-rr-heart"></i>
@@ -163,93 +164,939 @@
 
         <section class="container-fluid d-flex flex-column align-items-start m-2 p-2 main-container">
 
-            <!-- ITEM-LIST -->
-            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 item-list">
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
+                </button>
+
+                <!-- ITEM IMG -->
+                
                 <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
                 <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
-                <div class="desc-item-short">
-                    Casa grande perfeita com piscina<br>
-                    Tamanho: 1000 m² / 540 m²<br>
-                    Dormitórios: 5 quartos<br>
-                    Vagas: 3 carros          Localização: <br>
-                    Banheiros: 4                Rua logradouro, 123<br>
-                    Condomínio: Sim        Bairro - Itupeva-SP<br>
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
                 </div>
                 <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
-                <div class="d-flex flex-row desc-values-contnr">
-                    <div class="d-flex flex-column unity-contnr">
-                        <div class="first-line-unity">
-                            star
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
                         </div>
-                        <div class="second-line-unity">
-                            R$
-                        </div>
-                        <div class="third-line-unity">
-                            clock
-                        </div>
-                         
-                    </div>
-                    <div class="d-flex flex-column value-contnr">
                         <div class="first-line-value">
                             5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
                         </div>
                         <div class="second-line-value">
                             4322,00
                         </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
                         <div class="third-line-value">
-                            dia
+                            mês
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- ITEM-LIST -->
-            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
-                <input 
-                    type="text"
-                    class="text-center search-bar-input"
-                    placeholder="B u s c a r"    
-                >
-                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
-                <button class="search-bar-btn">
-                    <i class="fi fi-rr-search search-icon"></i>
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
                 </button>
+
+                <!-- ITEM IMG -->
+                
+                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
+                </div>
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            4322,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            mês
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- ITEM-LIST -->
-            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
-                <input 
-                    type="text"
-                    class="text-center search-bar-input"
-                    placeholder="B u s c a r"    
-                >
-                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
-                <button class="search-bar-btn">
-                    <i class="fi fi-rr-search search-icon"></i>
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
                 </button>
+
+                <!-- ITEM IMG -->
+                
+                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
+                </div>
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            4322,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            mês
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- ITEM-LIST -->
-            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
-                <input 
-                    type="text"
-                    class="text-center search-bar-input"
-                    placeholder="B u s c a r"    
-                >
-                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
-                <button class="search-bar-btn">
-                    <i class="fi fi-rr-search search-icon"></i>
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
                 </button>
+
+                <!-- ITEM IMG -->
+                
+                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
+                </div>
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            4322,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            mês
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- ITEM-LIST -->
-            <div class="container d-flex flex-row align-items-center mb-0 p-0 item-list">
-                <input 
-                    type="text"
-                    class="text-center search-bar-input"
-                    placeholder="B u s c a r"    
-                >
-                <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
-                <button class="search-bar-btn">
-                    <i class="fi fi-rr-search search-icon"></i>
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
                 </button>
+
+                <!-- ITEM IMG -->
+                
+                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
+                </div>
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            4322,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            mês
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
+                </button>
+
+                <!-- ITEM IMG -->
+                
+                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
+                </div>
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            4322,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            mês
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ITEM-LIST FIRST-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
+
+                <!-- FAV BUTTON -->
+
+                <button class="item-fav-button">
+                    <i class="fi fi-rr-heart item-fav-icon"></i>
+                </button>
+
+                <!-- ITEM IMG -->
+                
+                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+
+                <!-- LEFTBAR -->
+
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Casa grande perfeita com piscina
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Tamanho:
+                        </div>
+                        <div class="desc-item-value">
+                            1000 m² / 540 m²
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Dormitórios:
+                        </div>
+                        <div class="desc-item-value">
+                            5 quartos
+                        </div>
+                    </div>
+
+                    <!-- FOURTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fourth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Vagas:
+                        </div>
+                        <div class="desc-item-value left-value">
+                            3 carros
+                        </div>
+                        <div class="desc-item-loc-atribute right-atribute">
+                            Localização:
+                        </div>
+                    </div>
+
+                    <!-- FIFTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center fifth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Banheiros:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            4
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Rua logradouro, 123
+                        </div>
+                    </div>
+
+                    <!-- SIXTH LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center sixth-line-desc">
+                        <div class="desc-item-atribute left-atribute">
+                            Condomínio:
+                        </div>
+                        <div class="desc-item-log-value left-value">
+                            Sim
+                        </div>
+                        <div class="desc-item-loc-value right-value">
+                            Bairro - Itupeva-SP
+                        </div>
+                    </div>
+                </div>
+                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            5.0
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            4322,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            mês
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
         
         </section>
 

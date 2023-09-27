@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
     list-style: none;
     text-decoration: none;
     outline-color: #00000000;
@@ -18,11 +18,12 @@
     --secondary-color: #F7F7F7;
     --primary-color-transparent: #FFFFFF34;
     --primary-color-txt: #FFFFFF;
+    --secondary-color-txt: #182658;
+    --terceary-color-txt: #05F0FF;
     --placeholder-color-txt: #01114A30;
     --msgs-primary: #0E71D6;
-    --blue-money-color: #4077D0;
-    --green-money-color: #40F7D0;
-    --red-money-color: #ff1e46;
+    --drop-shadow-color-primary: #05F0FF;
+    --drop-shadow-color-secondary: #00000025;
     --invis: #00000000;
     --semi-trasnsparent: #ffffff34;
     --transition: .5s;
@@ -256,10 +257,24 @@ button {
 }
 
 .item-list {
+    position: relative;
     border: 0.1rem solid var(--primary-color) !important;
     border-radius: 0.2rem;
     width: 30.7rem;
     height: 7.7rem;
+}
+
+.item-fav-button {
+    background-color: var(--invis);
+    position: absolute;
+    height: 1.6rem;
+    width: 1.6rem;
+    top: 0.4rem;
+    left: 72.5%;
+}
+
+.item-fav-icon {
+    font-size: 1.6rem;
 }
 
 .img-item {
@@ -274,11 +289,77 @@ button {
 }
 
 .desc-item-short {
-    color: var(--primary-color);
+    height: 5.7rem;
+    flex: 1;
     font-size: .8rem;
+    color: var(--primary-color);
 }
 
+
+.desc-item-short > div {
+    line-height: 0.9rem;
+    height: 0.9rem;
+}
+
+.desc-item-title, .desc-item-atribute, .desc-item-loc-atribute {
+    font-weight: 700;
+} 
+
+.fourth-line-desc, .fifth-line-desc, .sixth-line-desc {
+    width: 100%;
+    text-align: left;
+}
+
+.left-value {
+    flex: 1;
+}
+
+
+
+.desc-item-log-value, .desc-item-loc-value {
+    padding-left: 0.2rem;
+}
+
+.desc-item-loc-atribute, .desc-item-log-value, .desc-item-loc-value {
+    width: 54%;
+}
+
+.desc-item-value, .desc-item-log-value, .desc-item-loc-value {
+    margin-left: 0.2rem;
+    font-weight: 500;
+} 
+
 .desc-values-contnr {
+    height: 5.6rem;
+    width: 5.1rem;
     font-size: .8rem;
     color: var(--primary-color);
 }
+
+
+.star-icon, .clock-icon-small {
+    color: var(--primary-color);
+    font-size: 1rem;
+    height: 1rem;
+}
+
+.first-line-values, .second-line-values, .third-line-values {
+    height: 1.1rem;
+    margin: 0.15rem 0;
+}
+
+.first-line-value, .second-line-value, .third-line-value {
+    text-align: center;
+    font-weight: 700;
+    flex: 1;
+}
+
+.second-line-unity {
+    font-weight: 600;
+    color: var(--terceary-color-txt);
+}
+
+.primary-shadow {
+    box-shadow: -0.07rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-primary)
+}
+
