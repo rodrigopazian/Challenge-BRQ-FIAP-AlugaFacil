@@ -23,6 +23,7 @@
     --placeholder-color-txt: #01114A30;
     --msgs-primary: #0E71D6;
     --drop-shadow-color-primary: #05F0FF;
+    --light-blur-color-primary: #05F0FF90;
     --drop-shadow-color-secondary: #00000025;
     --invis: #00000000;
     --semi-trasnsparent: #ffffff34;
@@ -362,6 +363,7 @@ button {
 .primary-shadow {
     box-shadow: -0.07rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-primary);
 }
+
 .inner-shadow {
-    box-shadow: 0rem 0rem 2rem 0rem inset var(--drop-shadow-color-primary); 
+    text-shadow: 0 0 1rem var(--light-blur-color-primary), 0 0 2rem var(--light-blur-color-primary), 0 0 3rem  var(--light-blur-color-primary), 0 0 4rem var(--light-blur-color-primary); 
 }
