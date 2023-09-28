@@ -1,0 +1,51 @@
+/* Variables */
+
+:root {
+    --bg-color: #F7F7F7;
+    --primary-color: #182658;
+    --secondary-color: #F7F7F7;
+    --primary-color-transparent: #FFFFFF34;
+    --primary-color-txt: #FFFFFF;
+    --secondary-color-txt: #182658;
+    --terceary-color-txt: #05F0FF;
+    --placeholder-color-txt: #01114A30;
+    --msgs-primary: #0E71D6;
+    --drop-shadow-color-primary: #05F0FF;
+    --light-blur-color-primary: #05F0FF90;
+    --drop-shadow-color-secondary: #00000025;
+    --invis: #00000000;
+    --semi-trasnsparent: #ffffff34;
+    --transition: .5s;
+
+}
+
+.hearth-btn {
+    position: relative;
+}
+
+.fav-counter-contnr {
+    background-color: var(--bg-color);
+    border: 0.02rem solid var(--primary-color) !important;
+    font-size: 1rem;
+    position: absolute;
+    width: 1.4rem;
+    height: 1.3rem;
+    top: 1.5rem;
+    left: 1.3rem;
+}
+
+.ad-marker-contnr {
+    color: var(--terceary-color-txt);
+    position: absolute;
+    width: max-content;
+    height: .8rem;
+    top: .3rem;
+    left: 23%;
+}
+
+.ad-marker-txt {
+    color: var(--terceary-color-txt);
+    font-size: .7rem;
+    font-weight: 400;
+}
+

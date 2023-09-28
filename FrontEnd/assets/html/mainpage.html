@@ -38,12 +38,13 @@
 
     <!-- Title -->
 
-    <title>AlugaFácil - Index</title>
+    <title>AlugaFácil - Main Page</title>
 
     <!-- Css stylesheet links -->
 
     
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleMainPage.css">
 
 </head>
 
@@ -67,7 +68,7 @@
             </button>
             <button class="d-flex flex-column align-items-center mb-1 switch-loc-type icon-size">
                 <!-- <i class="fi fi-ss-people-arrows-left-right"></i> -->
-                <img class="img-icon-size" src="./images/IconChangeLoc1.png" alt="Ícone troca de locatário para locador">
+                <img class="img-icon-size" src="../images/IconChangeLoc1.png" alt="Ícone troca de locatário para locador">
             </button>
         </nav>
 
@@ -82,7 +83,7 @@
                     <!-- offset.dumb.invisible.icon -->
                 </div>
                 <button class="small-logo">
-                    <img class="logomarca-small" src="./images/LogomarcaAlugafacil.png" alt="Logo marca Aluga fácil">
+                    <img class="logomarca-small" src="../images/LogomarcaAlugafacil.png" alt="Logo marca Aluga fácil">
                 </button>
                 <button class="d-flex flex-column align-items-center hands-icon icon-size">
                     <i class="fi fi-rr-handshake"></i>
@@ -90,16 +91,8 @@
             </section>
             
             <!-- Search bar and merch -->
-            <section class="container-fluid d-flex flex-column justify-content-evenly align-items-center px-1 my-1 search-merch-container ">
-        
-                <!-- FIRST ACCESS MESSAGE -->
-                <div class="container-fluid d-flex flex-column align-items-center group-msg-fa">
-                    <div class="mt-4 mb-3 p-2 primary-shadow first-access-msg">
-                        Olá, você efetuou o cadastro rápido, dessa forma você tem acesso à plataforma em segundos. Lembre-se, no entanto, que algumas ações no aplicativo necessitam de algumas informações adicionais, quando você quiser verificar seu e-mail e completar essas informações, utilize este ícone. Algumas informações não são obrigatórias, porém podem contribuir para uma melhor usabilidade.
-                        <img class="pointer" src="./images/MsgPAcessoPointer.png" alt="Pointer"></img>
-                    </div>
-                </div>
-        
+            <section class="container-fluid d-flex flex-column justify-content-evenly align-items-center px-1 mb-1 mt-5 search-merch-container ">
+                
                 <!-- SEARCH-BAR -->
                 <div class="container d-flex flex-row align-items-center mb-2 p-0 primary-shadow search-bar">
                     <input 
@@ -107,7 +100,7 @@
                         class="text-center search-bar-input"
                         placeholder="Buscar"    
                     >
-                    <img class="search-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                    <img class="search-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
                     <button class="search-bar-btn">
                         <i class="fi fi-rr-search search-icon"></i>
                     </button>
@@ -118,11 +111,11 @@
                     <button class="merch-arrow-left">
                         <i class="fi fi-br-angle-left arrow-left"></i>
                     </button>
-                    <img src="./images/LineBarWhite.png" alt="Linha separadora" class="merch-line-left">
+                    <img src="../images/LineBarWhite.png" alt="Linha separadora" class="merch-line-left">
                     <div class="merch-text">
                         MERCHANDISING OPPORTUNITIES
                     </div>
-                    <img src="./images/LineBarWhite.png" alt="Linha separadora" class="merch-line-right">
+                    <img src="../images/LineBarWhite.png" alt="Linha separadora" class="merch-line-right">
                     <button class="merch-arrow-right">
                         <i class="fi fi-br-angle-right arrow-right"></i>
                     </button>
@@ -139,10 +132,17 @@
                 <i class="fi fi-rr-alarm-clock"></i>
             </button>
             <button class="d-flex flex-column align-items-center mb-1 acc-inf-btn icon-size">
-                <i class="fi fi-rs-id-badge acc-inf-icon inner-shadow"></i>
+                <i class="fi fi-rs-id-badge acc-inf-icon"></i>
             </button>
-            <button class="d-flex flex-column align-items-center mb-1 hearth-icon icon-size">
-                <i class="fi fi-rr-heart"></i>
+            <button class="d-flex flex-column align-items-center mb-1 hearth-btn icon-size">
+                <i class="fi fi-ss-heart hearth-icon">
+                    
+                </i>
+                <div class="d-flex justify-content-center align-items-center fav-counter-contnr">
+                    <div class="fav-counter-txt">
+                        2
+                    </div>
+                </div>
             </button>
             <button class="d-flex flex-column align-items-center mb-1 localiz-icon icon-size">
                 <i class="fi fi-rr-marker"></i>
@@ -168,6 +168,16 @@
 
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        Anúncio patrocinado
+                    </div>
+
+                </div>
+
                 <!-- FAV BUTTON -->
 
                 <button class="item-fav-button">
@@ -176,11 +186,11 @@
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemHouse.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -257,7 +267,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -302,19 +312,29 @@
 
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        Anúncio patrocinado
+                    </div>
+
+                </div>
+
                 <!-- FAV BUTTON -->
 
                 <button class="item-fav-button">
-                    <i class="fi fi-rr-heart item-fav-icon"></i>
+                    <i class="fi fi-ss-heart item-fav-icon"></i>
                 </button>
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemBmwi3.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemBmwi3.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -391,7 +411,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -436,6 +456,16 @@
 
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        
+                    </div>
+
+                </div>
+
                 <!-- FAV BUTTON -->
 
                 <button class="item-fav-button">
@@ -444,11 +474,11 @@
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemAprtmnt.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemAprtmnt.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -525,7 +555,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -568,6 +598,16 @@
 
             <!-- ITEM-LIST FOURTH-->
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        
+                    </div>
+
+                </div>
+
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
                 <!-- FAV BUTTON -->
@@ -578,11 +618,11 @@
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemAgricultureMachine.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemAgricultureMachine.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -659,7 +699,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -704,19 +744,29 @@
 
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        
+                    </div>
+
+                </div>
+
                 <!-- FAV BUTTON -->
 
                 <button class="item-fav-button">
-                    <i class="fi fi-rr-heart item-fav-icon"></i>
+                    <i class="fi fi-ss-heart item-fav-icon"></i>
                 </button>
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemCB500F.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemCB500F.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -793,7 +843,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -837,6 +887,16 @@
         
             <!-- ITEM-LIST SIXTH-->
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        
+                    </div>
+
+                </div>
+
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
                 <!-- FAV BUTTON -->
@@ -847,11 +907,11 @@
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemJumpToy.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemJumpToy.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -928,7 +988,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -972,6 +1032,16 @@
 
             <div class="container d-flex flex-row align-items-center mb-0 p-0 px-2 primary-shadow item-list">
 
+
+                <!-- ADVERTISING MARKER -->
+
+                <div class="d-flex justify-content-center align-items-center ad-marker-contnr">
+                    <div class="ad-marker-txt">
+                        
+                    </div>
+
+                </div>
+
                 <!-- FAV BUTTON -->
 
                 <button class="item-fav-button">
@@ -980,11 +1050,11 @@
 
                 <!-- ITEM IMG -->
                 
-                <img src="./images/ItemWheelChair.png" alt="imagem do item da lista" class="img-item">
+                <img src="../images/ItemWheelChair.png" alt="imagem do item da lista" class="img-item">
 
                 <!-- LEFTBAR -->
 
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- SHORT ITEM DESC -->
 
@@ -1061,7 +1131,7 @@
                         </div>
                     </div>
                 </div>
-                <img class="item-bar-line" src="./images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
 
                 <!-- CONTAINER DESCRIPTION VALUES -->
 
@@ -1108,6 +1178,7 @@
     </main>
 
     <footer class="text-center">
+        
     </footer>
 
     <!-- Call script Bootstrap and app.js -->
