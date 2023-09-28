@@ -1,0 +1,337 @@
+<!-- INDEX HTML PAGE -->
+
+<!DOCTYPE html>
+
+<!-- HTML -->
+
+<html lang="pt-BR">
+
+<!-- HEAD -->
+
+<head>
+
+    <!-- Call CDN Server FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="    
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Call CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        
+    <!-- Call CDN FlatIcons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+    <!-- Call Google fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Metatags -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+
+    <title>AlugaFácil - Item Page</title>
+
+    <!-- Css stylesheet links -->
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleMainPage.css">
+    <link rel="stylesheet" href="../css/styleItemPage.css">
+
+</head>
+
+<!-- BODY -->
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="container-fluid d-flex flex-row justify-content-between align-items-start p-1 text-center container-header">
+        
+
+        <!-- HEADER MENU -->
+
+        <!-- left-side-menu -->
+
+        <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 left-side-menu">
+            
+            <button class="d-flex flex-column align-items-center mb-1 hmb-menu icon-size">
+                <i class="fi fi-br-menu-burger"></i>
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 switch-loc-type icon-size">
+                <!-- <i class="fi fi-ss-people-arrows-left-right"></i> -->
+                <img class="img-icon-size" src="../images/IconChangeLoc1.png" alt="Ícone troca de locatário para locador">
+            </button>
+        </nav>
+
+        <!-- middle-header-container -->
+
+        <section class="container-fluid d-flex flex-column align-items-start p-0 middle-header-container">
+
+            <!-- logo container -->
+            
+            <section class="container-fluid d-flex flex-row justify-content-between align-items-start p-0 header-logo">
+                <div class="hands-icon icon-size">
+                    <!-- offset.dumb.invisible.icon -->
+                </div>
+                <button class="small-logo">
+                    <img class="logomarca-small" src="../images/LogomarcaAlugafacil.png" alt="Logo marca Aluga fácil">
+                </button>
+                <button class="d-flex flex-column align-items-center hands-icon icon-size">
+                    <i class="fi fi-rr-handshake"></i>
+                </button>
+            </section>
+            
+            <!-- Search bar and merch -->
+            <section class="container-fluid d-flex flex-column justify-content-evenly align-items-center px-1 mb-1 mt-5 search-merch-container ">
+                
+                <!-- SEARCH-BAR -->
+                <div class="container d-flex flex-row align-items-center mb-2 p-0 primary-shadow search-bar">
+                    <input 
+                        type="text"
+                        class="text-center search-bar-input"
+                        placeholder="Buscar"    
+                    >
+                    <img class="search-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
+                    <button class="search-bar-btn">
+                        <i class="fi fi-rr-search search-icon"></i>
+                    </button>
+                </div>
+        
+                <!-- MERCH-BOX -->
+                <div class="container d-flex flex-row justify-content-between align-items-center my-1 primary-shadow merch-box">
+                    <button class="merch-arrow-left">
+                        <i class="fi fi-br-angle-left arrow-left"></i>
+                    </button>
+                    <img src="../images/LineBarWhite.png" alt="Linha separadora" class="merch-line-left">
+                    <div class="merch-text">
+                        MERCHANDISING OPPORTUNITIES
+                    </div>
+                    <img src="../images/LineBarWhite.png" alt="Linha separadora" class="merch-line-right">
+                    <button class="merch-arrow-right">
+                        <i class="fi fi-br-angle-right arrow-right"></i>
+                    </button>
+                </div>
+        
+            </section>
+        </section>
+
+
+        <!-- RIGHT-SIDE-MENU  -->
+
+        <nav class="container-fluid d-flex flex-column justify-content-evenly align-items-center p-0 right-side-menu">
+            <button class="d-flex flex-column align-items-center mb-1 clock-icon icon-size">
+                <i class="fi fi-rr-alarm-clock"></i>
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 acc-inf-btn icon-size">
+                <i class="fi fi-rs-id-badge acc-inf-icon"></i>
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 hearth-btn icon-size">
+                <i class="fi fi-ss-heart hearth-icon">
+                    
+                </i>
+                <div class="d-flex justify-content-center align-items-center fav-counter-contnr">
+                    <div class="fav-counter-txt">
+                        2
+                    </div>
+                </div>
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 localiz-icon icon-size">
+                <i class="fi fi-rr-marker"></i>
+            </button>
+            <button class="d-flex flex-column align-items-center mb-1 filter-icon icon-size">
+                <i class="fi fi-rr-filter"></i>
+            </button>
+        </nav>
+
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="container-fluid d-flex flex-column align-items-center p-0 mb-1 main-container text-center">       
+
+        <!-- main MENU -->
+
+        <!-- middle-main-container -->
+
+        <section class="container-fluid d-flex flex-column align-items-start m-2 p-1 main-container">
+
+            <!-- ITEM-TITLE-->
+
+            <div class="container d-flex flex-row align-items-center mb-0 p-0 primary-shadow item-hud-container item-title-size">
+
+                <!-- LEFTBAR -->
+                
+                <img class="decoration-bar-line" src="../images/LineBar.png">
+                
+                <!-- SHORT ITEM DESC -->
+                
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+                    
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            BMW i3 Elétrico Edrive BEV Full 2023
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- RIGHTBAR -->
+                
+                <img class="decoration-bar-line" src="../images/LineBar.png">
+
+            </div>
+
+
+            <!-- ITEM-IMGS-->
+
+            <div class="container d-flex flex-row justify-content-center align-items-center mb-0 p-0 primary-shadow item-hud-container item-imgs-size">
+                <div class="item-imgs-container">
+                    <img src="../images/ItemBmwi3.png" alt="Imagem do item" class="item-imgs">
+                </div>
+
+            
+            </div>
+
+
+
+            <!-- ITEM-LIST SECOND-->
+
+            <div class="container d-flex flex-row justify-content-between align-items-center mb-0 p-0 px-2 primary-shadow item-hud-container item-main-info-size">
+
+
+                <div class="d-flex flex-column justify-content-evenly align-items-center mx-2 px-3 loc-prf-container">
+
+                    <!-- LOC PROFILE IMG -->
+                    
+                    <div class="d-flex flex-row justify-content-between align-items-center primary-shadow item-hud-container img-loc-prf-size">
+                        
+                            <!-- LEFTBAR -->
+                            
+                            <img class="decoration-bar-line" src="../images/LineBar.png">
+            
+                            <!-- IMG LOC PROFILE -->
+            
+                            <img src="../images/LocProfileDefault.png" alt="IMG" class="img-loc-prf">
+                                
+                        
+                        <!-- RIGHTBAR -->
+                        
+                        <img class="decoration-bar-line" src="../images/LineBar.png">
+                    
+                    </div>
+    
+                    <div class="txt-loc-prf-container">
+                        <div class="txt-loc-prf">
+                            BMW SP
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- SHORT ITEM DESC -->
+
+                <div class="d-flex flex-column justify-content-center align-items-start desc-item-short">
+
+                    <!-- FIRST LINE DESC TITLE -->
+                    <div class="d-flex flex-row justify-content-start align-items-center first-line-desc">
+                        <div class="desc-item-title">
+                            Informações do locador:
+                        </div>
+                    </div>
+
+                    <!-- SECOND LINE DESC ATRIBUTE VALUE -->
+
+                    <div class="d-flex flex-row justify-content-start align-items-center second-line-desc">
+                        <div class="desc-item-atribute">
+                            Marca:
+                        </div>
+                        <div class="desc-item-value">
+                            BMW
+                        </div>
+                    </div>
+
+                    <!-- THIRD LINE DESC ATRIBUTE VALUE -->
+                    
+                    <div class="d-flex flex-row justify-content-start align-items-center third-line-desc">
+                        <div class="desc-item-atribute">
+                            Quilometragem:
+                        </div>
+                        <div class="desc-item-value">
+                            10.000 Km
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <img class="item-bar-line" src="../images/LineBar.png" alt="Separador interno da barra de pesquisa">
+
+                <!-- CONTAINER DESCRIPTION VALUES -->
+
+                <div class="d-flex flex-column justify-content-evenly align-left desc-values-contnr">
+
+                    <!-- CONTAINER FIRST LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center first-line-values">
+                        <div class="star-container">
+                            <i class="fi fi-bs-star star-icon"></i>
+                        </div>
+                        <div class="first-line-value">
+                            4.7
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER SECOND LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center second-line-values">
+                        <div class="second-line-unity">
+                            R$
+                        </div>
+                        <div class="second-line-value">
+                            243,00
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER THIRD LINE VALUES -->
+
+                    <div class="d-flex flex-row justify-content-center align-items-center third-line-values">
+                        <div class="clock-container">
+                            <i class="fi fi-rr-alarm-clock clock-icon-small"></i>
+                        </div>                         
+                        <div class="third-line-value">
+                            dia
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="text-center">
+        
+    </footer>
+
+    <!-- Call script Bootstrap and app.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/app_index.js"></script>
+    <!-- <script type="text/javascript" src="./assets/js/models/SignUp.js"></script> -->
+    <script type="text/javascript">
+    // let sign = new SignUp();
+    // console.log(sign.login);
+    </script>
+</body>
+
+</html>

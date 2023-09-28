@@ -1,0 +1,68 @@
+/* Variables */
+
+:root {
+    --bg-color: #F7F7F7;
+    --primary-color: #182658;
+    --secondary-color: #F7F7F7;
+    --primary-color-transparent: #FFFFFF34;
+    --primary-color-txt: #FFFFFF;
+    --secondary-color-txt: #182658;
+    --terceary-color-txt: #05F0FF;
+    --placeholder-color-txt: #01114A30;
+    --msgs-primary: #0E71D6;
+    --drop-shadow-color-primary: #05F0FF;
+    --light-blur-color-primary: #05F0FF90;
+    --drop-shadow-color-secondary: #00000025;
+    --invis: #00000000;
+    --semi-trasnsparent: #ffffff34;
+    --transition: .5s;
+
+}
+
+.item-hud-container {
+    border: 0.02rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    width: 99%;
+}
+
+.decoration-bar-line {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    height: 100%;
+    width: 0.05rem;
+}
+
+.item-title-size {
+    height: 3rem;
+}
+
+.item-imgs-size {
+    height: 19.7rem;
+}
+
+.item-main-info-size {
+    height: 6.3rem;
+}
+
+.item-imgs {
+    width: 26.4rem;
+}
+
+.loc-prf-container {
+    height: 5.4rem;
+}
+
+.img-loc-prf {
+    width: 1.8rem;
+    height: 1.3rem;
+}
+
+.img-loc-prf-size {
+    height: 2.9rem;
+    width: 3.2rem;
+}
+
+.txt-loc-prf {
+    font-size: .7rem;
+    color: var(--secondary-color-txt);
+}

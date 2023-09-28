@@ -135,7 +135,6 @@ button {
     background-color: var(--msgs-primary);
 }
 .pointer {
-    z-index: ;
     position: absolute;
     left: 100%;
     top: -1%;
@@ -174,7 +173,7 @@ button {
     color: var(--primary-color);
     color: var(--placeholder-color-txt);
     flex: 1;    
-    height: -content;
+    height: max-content;
 
     /*bigscreen 
     border-radius: 0.7rem;
@@ -183,7 +182,7 @@ button {
 
 .search-bar-line{
     margin-inline: .5rem;
-    padding: 0 !important;
+    padding: 0rem !important;
     height: 1.95rem;
     width: .1rem;
 }
@@ -196,8 +195,7 @@ button {
     background-color: var(--invis);
     height: 1.8rem;
     width: 1.8rem;
-    border: 0.1rem solid var(--primary-color) !important;
-    border-radius: 0.2rem;
+    border-radius: 0.1rem;
 }
 
 .search-icon {
@@ -361,7 +359,7 @@ button {
 }
 
 .primary-shadow {
-    box-shadow: -0.07rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-primary);
+    box-shadow: -0.02rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-primary);
 }
 
 .inner-shadow {
