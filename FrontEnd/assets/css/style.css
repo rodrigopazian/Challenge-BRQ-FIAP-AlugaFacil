@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     font-family: "Ubuntu", sans-serif;
     list-style: none;
     text-decoration: none;
@@ -34,11 +34,12 @@
 /* Inheritance */
 
 html {
+    width: 100vw;
     font-size: 62.5%;    /* Alterar valor de calculo do 'rem' de 16px para 10px */
-    width: 100vw !important;
 }
 
 body {
+    width: 100vw;
     font-size: 1.6rem;    /* Retornando valor padrão de fonte-size do body com unidade rem */
     color: var(--primary-color-txt);
     background-color: var(--bg-color);

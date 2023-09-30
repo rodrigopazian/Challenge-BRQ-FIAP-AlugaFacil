@@ -12,18 +12,21 @@
     --msgs-primary: #0E71D6;
     --drop-shadow-color-primary: #05F0FF;
     --light-blur-color-primary: #05F0FF90;
-    --drop-shadow-color-secondary: #00000025;
+    --drop-shadow-color-secondary: #000000;
     --invis: #00000000;
     --semi-trasnsparent: #ffffff34;
     --transition: .5s;
 
 }
 
+/* APLIED TO ALL CONTAINERS */
 .item-hud-container {
     border: 0.02rem solid var(--primary-color) !important;
     border-radius: 0.2rem;
     width: 99%;
 }
+
+/* APLIED TO ALL CONTAINERS WITH BARS */
 
 .decoration-bar-line {
     margin-left: .2rem;
@@ -32,37 +35,216 @@
     width: 0.05rem;
 }
 
+/* FLEX FILL CONTAINER */
+
+.flex-fill-container {
+    flex: 1;
+    text-align: left;
+}
+
+/* HEIGHT APLIED TO THE TITLE CONTAINER */
+
 .item-title-size {
     height: 3rem;
 }
+
+
+/* HEIGHT APLIED TO THE IMGS ITEM CONTAINER */
 
 .item-imgs-size {
     height: 19.7rem;
 }
 
+
+/* HEIGHT APLIED TO THE MAIN INFO CONTAINER */
+
 .item-main-info-size {
     height: 6.3rem;
 }
+
+
+/* ITEM IMGS CONFIGURATION */
 
 .item-imgs {
     width: 26.4rem;
 }
 
+
+/* LOC PROFILE CONTAINER CONFIGURATION */
+
 .loc-prf-container {
     height: 5.4rem;
+    border: 0.02rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
 }
+
+
+/* LOC PROFILE SUB-CONTAINER IMG CONFIGURATION */
 
 .img-loc-prf {
     width: 1.8rem;
     height: 1.3rem;
 }
 
+/* LOC PROFILE SUB-CONTAINER IMG CONFIGURATION */
+
 .img-loc-prf-size {
     height: 2.9rem;
     width: 3.2rem;
 }
 
+
+/* LOC PROFILE SUB-CONTAINER TXT CONFIGURATION */
+
 .txt-loc-prf {
     font-size: .7rem;
     color: var(--secondary-color-txt);
 }
+
+
+/* ITEM INFOS CONTAINER CONFIGURATION */
+
+.item-infos-container {
+    border: 0.02rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    color: var(--secondary-color-txt);
+    font-size:.8rem;
+    height: 5.6rem;
+    width: 22.6rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+/* ITEM INFOS SUB-CONTAINER CONFIGURATION */
+
+.first-line-item-infos, .second-line-item-infos, .third-line-item-infos {
+    padding-inline: 0.3rem ;
+    color: var(--secondary-color-txt);
+    height: 1.27rem;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+
+.star-item-info {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.loc-icon-small, .alrm-icon-small, .clndr-icon-small {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.txt-data-verif, .real-txt {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--terceary-color-txt)
+}
+
+.item-buttons-size {
+    height: 3.4rem;
+    border: .2rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    row-gap: 2rem;
+}
+
+.ask-btn, .rent-btn {
+    width: 49.5%;
+    background-color: var(--primary-color);
+    row-gap: 0.4rem;
+    border: 0.08rem solid var(--secondary-color) !important;
+    border-radius: 0.2rem;
+    height: 2.2rem;
+    box-shadow: -0.02rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-secondary);
+}
+
+.bars-btn-size {
+    height: 0.7rem;
+    width: 0.1rem;
+}
+
+.ask-rent-btn-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color-txt);
+
+}
+
+.item-dlvry-opt-size {
+    height: 11.5rem;
+    row-gap: 0.4rem;   
+}
+
+.great-decoration-bar {
+    width: 0.1rem;
+    height: 5.95rem;
+}
+
+.item-dlvry-opt-container { 
+    color: var(--secondary-color-txt);
+    font-size:.8rem;
+    height: 9.7rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.item-dlvry-opt-title, .item-localization, .item-dlvry-opt {
+    padding-inline: 0.3rem ;
+    color: var(--secondary-color-txt);
+    height: 1.27rem;
+    width: 100%;
+    gap: 1rem;    
+}
+
+label input[type="radio"] {
+    vertical-align: middle;
+}
+
+.item-localization {
+    padding-right: 1.5rem;
+}
+
+.item-desc-cntnr-size {
+    height: max-content;
+}
+
+.item-desc-txt-container {
+    color: var(--secondary-color-txt);
+    font-size:.8rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    min-height: 10vh;
+    height: max-content;
+}
+
+.item-desc-txt-title {
+    height: max-content;
+}
+
+.item-desc-txt{
+    text-align: left;
+    height: max-content;
+}
+
+.item-tec-info-size {
+    height: max-content;
+}
+
+.item-tec-info-line {
+    padding-inline: 0.3rem ;
+    color: var(--secondary-color-txt);
+    height: 1.27rem;
+    width: 100%;
+    gap: 1rem;  
+}
+
+.tec-half {
+    width: 50%;
+    gap: 0.5rem;
+}
+
+.item-tec-atrbt {
+    font-weight: 600;
+}
+
