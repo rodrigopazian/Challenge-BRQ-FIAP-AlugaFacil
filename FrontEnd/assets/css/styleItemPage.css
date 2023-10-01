@@ -53,9 +53,35 @@
 
 .item-imgs-size {
     height: 19.7rem;
+    position: relative;
 }
 
 
+.img-counter-contnr {
+    background-color: var(--bg-color);
+    border: 0.1rem solid var(--primary-color) !important;
+    font-size: .8rem;
+    position: absolute;
+    width: 2.2rem;
+    height: 1.3rem;
+    top: 5%;
+    left: 4%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-counter-txt {
+    color: var(--secondary-color-txt);
+}
+
+.hearth-icon-great {
+    font-size: 1.8rem;
+    position: absolute;
+    top: 5%;
+    left: 91%;
+    text-align: center;
+    vertical-align: middle;
+}
 /* HEIGHT APLIED TO THE MAIN INFO CONTAINER */
 
 .item-main-info-size {
@@ -136,7 +162,7 @@
     color: var(--primary-color);
 }
 
-.txt-data-verif, .real-txt {
+.txt-data-verif, .real-txt, .see-all-txt {
     font-size: 0.8rem;
     font-weight: 700;
     color: var(--terceary-color-txt)
@@ -148,6 +174,7 @@
     border-radius: 0.2rem;
     row-gap: 2rem;
 }
+
 
 .ask-btn, .rent-btn {
     width: 49.5%;
@@ -248,3 +275,73 @@ label input[type="radio"] {
     font-weight: 600;
 }
 
+.item-reviews-sub-container {
+    color: var(--secondary-color-txt);
+    font-size:.8rem;
+    height: max-content;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    column-gap: 5rem;
+}
+
+.item-reviews-line {
+    padding-inline: 0.3rem ;
+    color: var(--secondary-color-txt);
+    height: 1.27rem;
+    width: 100%;
+    gap: 1rem;  
+}
+
+.item-review-contnr-size {
+    height: max-content;
+}
+
+.stars-contnr-size {
+    width: 5.4rem;
+    height: 1.4rem;
+}
+
+.item-asking-size{
+    height: max-content;
+    border: .2rem solid var(--primary-color) !important;
+    border-radius: 0.2rem;
+    row-gap: 0.7rem;
+}
+
+.item-ask-input-contnr {
+    width: 100%;
+}
+
+
+.item-asking-input { 
+    margin-left: 0.5rem;  
+    font-size: 1.2rem;
+    
+    /*bigscreen 
+    font-size: 1.6rem; */
+    border: 0.1rem solid var(--invis);
+    
+    color: var(--primary-color);
+    color: var(--placeholder-color-txt);
+    flex: 1;    
+    height: max-content;
+
+    /*bigscreen 
+    border-radius: 0.7rem;
+    height: 4.43rem; */
+}
+
+
+.ask-btn-great {
+    width: 67%;
+    background-color: var(--primary-color);
+    row-gap: 0.4rem;
+    border: 0.08rem solid var(--secondary-color) !important;
+    border-radius: 0.2rem;
+    height: 2.8rem;
+    box-shadow: -0.02rem 0.07rem 0.37rem 0.01rem var(--drop-shadow-color-secondary);
+}
+
+.item-ask-txt {
+    font-weight: 600;
+}
