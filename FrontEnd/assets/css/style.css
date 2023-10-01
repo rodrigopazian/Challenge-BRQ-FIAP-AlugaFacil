@@ -366,3 +366,42 @@ button {
 .inner-shadow {
     text-shadow: 0 0 1rem var(--light-blur-color-primary), 0 0 2rem var(--light-blur-color-primary), 0 0 3rem  var(--light-blur-color-primary), 0 0 4rem var(--light-blur-color-primary); 
 }
+
+
+@media (min-width: 700px) {  
+    html {
+        font-size: 75.5%
+    }
+    .group-msg-fa {
+        position: absolute;
+        top: 7.2%;
+        left: 75%;
+        width: 22%;
+    }
+    .first-access-msg {
+        font-size: 1.2rem;
+    }
+    .search-bar {
+        width: 30%;
+    }
+
+    .merch-box {
+        width: 50%;
+        height: 20vh;
+    }
+    .item-list {
+        width: 90%;
+        height: 20vh;
+    }
+    .desc-values-contnr {
+        width: max-content;
+    }
+    
+    .img-item {
+        width: 10%;
+    }
+    .item-bar-line {
+        height: 75%;
+    }
+
+}

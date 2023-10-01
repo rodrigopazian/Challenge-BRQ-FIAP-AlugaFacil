@@ -100,8 +100,6 @@
 
 .loc-prf-container {
     height: 5.4rem;
-    border: 0.02rem solid var(--primary-color) !important;
-    border-radius: 0.2rem;
 }
 
 
@@ -130,13 +128,10 @@
 
 /* ITEM INFOS CONTAINER CONFIGURATION */
 
-.item-infos-container {
-    border: 0.02rem solid var(--primary-color) !important;
-    border-radius: 0.2rem;
+.item-infos-container {    
     color: var(--secondary-color-txt);
     font-size:.8rem;
     height: 5.6rem;
-    width: 22.6rem;
     padding-top: .4rem;
     padding-bottom: .4rem;
 }
