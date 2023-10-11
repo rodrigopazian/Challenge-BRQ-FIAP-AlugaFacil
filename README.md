@@ -4,9 +4,12 @@
 
 <img src="FrontEnd/assets/images/AlugafacilIntro.png">
 
-<h2 align="center">
-  HTML PAGES
-</h2>
 
-<img align="center" src="FrontEnd/assets/images/Alugafacil.png">
+<h3 align="center">
+  HTML
+</h3>
+
+<div align="center">
+<img src="FrontEnd/assets/images/Alugafacil.png">  
+</div>
 <img align="center" src="FrontEnd/assets/images/Alugafacil2.png">
