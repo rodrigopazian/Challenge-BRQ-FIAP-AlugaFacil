@@ -1,3 +1,5 @@
+<p align="center">
+  
 <h1 align="center">
   ALUGAFÁCIL
 </h1>
@@ -9,7 +11,6 @@
   HTML
 </h3>
 
-<p align="center">
 <img src="FrontEnd/assets/images/Alugafacil.png">  
 <img align="center" src="FrontEnd/assets/images/Alugafacil2.png">
 </p>
