@@ -8,5 +8,5 @@
   HTML PAGES
 </h2>
 
-<img src="FrontEnd/assets/images/Alugafacil.png">
-<img src="FrontEnd/assets/images/Alugafacil2.png">
+<img align="center" src="FrontEnd/assets/images/Alugafacil.png">
+<img align="center" src="FrontEnd/assets/images/Alugafacil2.png">
