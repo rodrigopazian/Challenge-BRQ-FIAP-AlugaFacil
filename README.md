@@ -1,4 +1,12 @@
-# Challenge-BRQ-FIAP-AlugaFacil
+<h1 align="center">
+  ALUGAFÁCIL
+</h1>
 
-<img width="45%" src="FrontEnd/assets/images/Alugafacil.png">
-<img width="45%" src="FrontEnd/assets/images/Alugafacil2.png">
+<img src="FrontEnd/assets/images/AlugafacilIntro.png">
+
+<h2 align="center">
+  HTML PAGES
+</h2>
+
+<img src="FrontEnd/assets/images/Alugafacil.png">
+<img src="FrontEnd/assets/images/Alugafacil2.png">
