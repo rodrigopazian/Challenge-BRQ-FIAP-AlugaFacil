@@ -9,7 +9,7 @@
   HTML
 </h3>
 
-<div align="center">
+<p align="center">
 <img src="FrontEnd/assets/images/Alugafacil.png">  
-</div>
 <img align="center" src="FrontEnd/assets/images/Alugafacil2.png">
+</p>
