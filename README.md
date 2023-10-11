@@ -1,17 +1,15 @@
-<p align="center">
-  
 <h1 align="center">
   ALUGAFÁCIL
 </h1>
 
-<img src="FrontEnd/assets/images/AlugafacilIntro.png">
+<p align="center"><img src="FrontEnd/assets/images/AlugafacilIntro.png"></p>
 
 
 <h3 align="center">
   MAIN PAGE
 </h3>
 
-<img src="FrontEnd/assets/images/Alugafacil.png">  
+<p align="center"><img src="FrontEnd/assets/images/Alugafacil.png"></p> 
 
 <h3 align="center">
   DOCUMENTO VISÃO ALUGAFÁCIL
@@ -23,8 +21,7 @@
 <h3 align="center">
   HTML PAGES
 </h3>
-<img src="FrontEnd/assets/images/Alugafacil2.png">
+<p align="center"><img src="FrontEnd/assets/images/Alugafacil2.png"></p>
 
 
 
-</p>
